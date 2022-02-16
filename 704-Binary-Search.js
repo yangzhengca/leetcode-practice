@@ -52,3 +52,6 @@ var search = function (nums, target) {
   }
   return -1;
 };
+
+
+// https://youtu.be/ybxsRAL6q0g
