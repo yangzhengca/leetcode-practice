@@ -38,3 +38,23 @@ var reverseString = function(s) {
     }
     return s;
 };
+
+// solution 2:
+
+// Runtime: 119 ms, faster than 62.00% of JavaScript online submissions for Reverse String.
+// Memory Usage: 51.5 MB, less than 5.14% of JavaScript online submissions for Reverse String.
+
+/**
+ * @param {character[]} s
+ * @return {void} Do not return anything, modify s in-place instead.
+ */
+ var reverseString = function(s, left = 0, right = s.length - 1) {
+    if (left === right || left > right){
+        return s;
+    } else {
+        let temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
+    }
+    reverseString(s, left + 1, right -1)    
+};
