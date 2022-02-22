@@ -53,3 +53,22 @@
     return reversedHead;
     
 };
+
+
+
+// solution 2:(Iterative)
+
+// Runtime: 65 ms, faster than 93.93% of JavaScript online submissions for Reverse Linked List.
+// Memory Usage: 44.2 MB, less than 27.06% of JavaScript online submissions for Reverse Linked List.
+
+var reverseList = function(head) {
+    let res = null;
+    while(head != null){
+        let next = head.next;
+        head.next = res;
+        res = head; 
+        head = next;
+    }
+    return res;
+    
+};
