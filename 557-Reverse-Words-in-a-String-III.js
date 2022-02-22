@@ -23,7 +23,7 @@
 // All the words in s are separated by a single space.
 
 
-solution 1:
+// solution 1:
 
 
 
